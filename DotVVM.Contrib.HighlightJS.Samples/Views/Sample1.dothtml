@@ -1,0 +1,9 @@
+﻿@viewModel DotVVM.Contrib.HighlightJS.Samples.ViewModels.Sample1ViewModel, DotVVM.Contrib.HighlightJS.Samples
+@masterPage Views/_master.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <div>
+        <dc:HighlightJS Code="{value: Code}" Language="cisco" LineNumbersEnabled="true" />        
+    </div>   
+</dot:Content>
+

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;net472</TargetFrameworks>
+	<PackageId>DotVVM.Contrib.HighlightJS</PackageId>
+    <AssemblyName>DotVVM.Contrib.HighlightJS</AssemblyName>
+    <Description>The HighlightJS control for DotVVM made by DotVVM Contrib community.</Description>
+    <PackageTags>dotvvm;asp.net;mvvm;owin;dotnetcore;dnx</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\highlight.min.js" />
+    <None Remove="Scripts\highlight.cisco.min.js" />
+	  <None Remove="Scripts\highlight-line-numbers.min.js" />	
+	  <None Remove="Styles\highlight_theme.min.css" />	
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\DotVVM.Contrib.HighlightJS.js" />
+	  <EmbeddedResource Include="Scripts\highlight.min.js" />
+	  <EmbeddedResource Include="Scripts\highlight.cisco.min.js" />
+	  <EmbeddedResource Include="Scripts\highlight-line-numbers.min.js" />	
+	  <EmbeddedResource Include="Styles\highlight_theme.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotVVM" Version="4.2.6" />
+  </ItemGroup>
+
+</Project>

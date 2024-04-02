@@ -1,0 +1,7 @@
+﻿@viewModel DotVVM.Contrib.HighlightJS.Samples.ViewModels.Sample2ViewModel, DotVVM.Contrib.HighlightJS.Samples
+@masterPage Views/_master.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+    <dc:HighlightJS Code="{value: Code}" Language="javascript" />
+</dot:Content>
+
