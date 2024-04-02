@@ -6,6 +6,13 @@
     <AssemblyName>DotVVM.Contrib.HighlightJS</AssemblyName>
     <Description>The HighlightJS control for DotVVM made by DotVVM Contrib community.</Description>
     <PackageTags>dotvvm;asp.net;mvvm;owin;dotnetcore;dnx</PackageTags>
+    <Title>DotVVM.Contrib.HighlightJS</Title>
+    <Authors>Bock Ondrej</Authors>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/butras/DotVVM.Contrib.HighlightJS</RepositoryUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>4.2.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +28,13 @@
 	  <EmbeddedResource Include="Scripts\highlight.cisco.min.js" />
 	  <EmbeddedResource Include="Scripts\highlight-line-numbers.min.js" />	
 	  <EmbeddedResource Include="Styles\highlight_theme.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

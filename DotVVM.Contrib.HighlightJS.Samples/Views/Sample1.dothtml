@@ -2,8 +2,9 @@
 @masterPage Views/_master.dotmaster
 
 <dot:Content ContentPlaceHolderID="MainContent">
-    <div>
-        <dc:HighlightJS Code="{value: Code}" Language="cisco" LineNumbersEnabled="true" />        
-    </div>   
+    <dot:Button Click="{command: ChangeCode}" Text="Change" />    
+    
+    <dc:HighlightJS Code="{value: Code}" Language="cisco" LineNumbersEnabled="true" />   
+    
 </dot:Content>
 

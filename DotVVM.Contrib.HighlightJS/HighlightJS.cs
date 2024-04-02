@@ -46,8 +46,7 @@ namespace DotVVM.Contrib.HighlightJS
         }
 
         protected override void AddAttributesToRender(IHtmlWriter writer, IDotvvmRequestContext context)
-        {
-            writer.RenderBeginTag("pre");
+        {            
             writer.AddAttribute("class", Language);            
             
             writer.AddKnockoutDataBind("dotvvm-contrib-HighlightJS", this, CodeProperty, renderEvenInServerRenderingMode: true, nullBindingAction: () =>
